@@ -24,6 +24,6 @@ jobs:
             -t megieph0/tf-python:latest \
             -t megieph0/tf-python:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5} \
             .
-       - name: Push container
-         run: |
+      - name: Push container
+         run:|
            docker push megieph0/tf-python --all-tags
