@@ -6,4 +6,4 @@ WORKDIR /app
 RUN pip install pip --upgrade 
 RUN pip install -r requirements.txt
 
-CMD ["python", "-a", "http-server", "8080"]
+CMD ["python", "-m", "http-server", "8080"]
